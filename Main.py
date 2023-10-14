@@ -26,15 +26,11 @@ print("test tower_of_hanoi_iterative: ") ; tower_of_hanoi_iterative(towers)
 
 
 print("\n\n-----Game loop test-----")
-
 print("test game_loop recursive: ") ; game_loop(1)
 nb_move = 0 # we reset the number of moves as the other test will increment it
 print("test game_loop iterative: ") ; game_loop(2)
-
 #print("test game_loop classic: ") ; game_loop(0,0)  # uncomment to test the most generic terminal version for the classic game
 nb_move = 0 ; print("test game_loop classic: ") ; game_loop(0,1)  # uncomment to test the more advance terminal version for the classic game
 
-
 print ("\n\n-----Test Scores-----")
-
 print("nombre de move: ",nb_move)
