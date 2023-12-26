@@ -1,6 +1,13 @@
-from global_variables import *
+#### global variables
+nb_disk = int(input("Enter the number of disks: "))
+move_list = []
+limit_move = (2 ** nb_disk - 1) * 2
+nb_move = 0
 
 
+
+
+#### Auxilliary  functions
 
 def towers_initialisation():
     '''
@@ -72,9 +79,10 @@ def is_finished(towers):
 
 
 
+#### Automatic resolution functions
 
 
-
+##### Recursive resolution
 def tower_of_hanoi_recursive(n, towers, source=0, auxiliary=1, destination=2):
     ''' 
     Resolve the game recursively
@@ -99,7 +107,7 @@ def tower_of_hanoi_recursive(n, towers, source=0, auxiliary=1, destination=2):
 
 
 
-
+##### Iterative resolution
 def tower_of_hanoi_iterative(towers):
     ''' 
     Resolve the Tower of Hanoi problem iteratively
@@ -145,6 +153,12 @@ def check(towers, source, destination):
 
 
 
+
+
+
+
+#### Terminal Display functions
+
 def display_towers_terminal0(towers):
     ''' 
     Display the towers in the terminal (most generic version)
@@ -177,6 +191,8 @@ def display_towers_terminal1(towers):
 
 
 
+
+#### Game loop function
 
 def game_loop(game_mode, graphic_mode = 1):
     '''
